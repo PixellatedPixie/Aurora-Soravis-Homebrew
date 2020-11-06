@@ -48,7 +48,7 @@
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			<grant type="Size" id="ID_SIZE_SMALL" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<select type="Language" id="ID_LANGUAGE_GRIMALKINN" />
+			<grant type="Language" id="ID_LANGUAGE_GRIMALKINN" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GRIMALKINN_NATURAL_WEAPON" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BORN_SURVIVOR" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FOREST_SCAVENGER" />
