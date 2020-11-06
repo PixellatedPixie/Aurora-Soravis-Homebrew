@@ -12,6 +12,7 @@
 		<setters>
 			<set name="abbreviation">SOR</set>
 			<set name="homebrew">true</set>
+			<set name="url">https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew</set>
 		</setters>
 	</element>
 </elements>
