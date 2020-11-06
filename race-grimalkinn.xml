@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	
+	<info>
+		<name>Grimalkinn</name>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="1.1">
+			<file name="race-grimalkinn.xml" url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew/blob/main/race-grimalkinn.xml" />
+		</update>
+	</info>
 	
 	<element name="Grimalkinn" type="Race" source="Soravis Campaign" id="ID_RACE_GRIMALKINN">
 		<description>
@@ -42,7 +48,7 @@
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			<grant type="Size" id="ID_SIZE_SMALL" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<select type="Language" name="Language (Grimalkinn)" supports="Standard||Exotic" />
+			<select type="Language" id="ID_LANGUAGE_GRIMALKINN" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GRIMALKINN_NATURAL_WEAPON" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BORN_SURVIVOR" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FOREST_SCAVENGER" />
