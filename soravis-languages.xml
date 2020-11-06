@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Homebrewed Languages</name>
+	</info>
+
+	<!-- standard -->
+	<element name="Grimalkinn" type="Language" source="Soravis Campaign" id="ID_LANGUAGE_GRIMALKINN">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Grimalkinn.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Grimalkinns</set>
+			<set name="script">Grimalkinn</set>
+		</setters>
+	</element>
+</elements>

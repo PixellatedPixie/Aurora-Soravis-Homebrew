@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="Harpy" type="Race" source="Soravis" id="ID_SAMPI_SENPAI_HARPY">
+        <description>
+            <p>Once terrifying creatures that roamed the mountaintops, feasting on whatever poor adventurers walked through their domain, these harpies have evolved to fit into common societies. They can range anywhere from commonfolk going about their daily lives to soldiers guarding a city to land-dwelling watchers and rangers to quiet assassins with silent flight. Though almost all of them have abandoned their monstrous ways, they may still carry slight tendencies from their older days. </p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constution score increses by 2.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Modern Harpies lifespans increased quite a bit from their ancestors to match the rate of other civilians. They age at the same rate as most civilians, hitting adulthood at 18, and live to about 200 to 300 years. </p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Harpy alignments vary considerably depending on where or how they were raised; Generally speaking, modern harpies will tend towards true neutral, focusing on mainly their own self-betterment. </p>
+            <p class="indent"><strong><em>Size.</em></strong> On average, harpies typically reach 5-6 feet in height. They're a bit lighter than other races of this height, averaging 100 pounds. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> You have a walking speed of 25 feet and a flying speed of 35 feet. You must land at the end of your turns; otherwise, you fall. Starting at 5th level, you no longer have to land at the end of each of your turns, as your feathers fully develop. </p>
+            <p class="indent"><strong><em>Cutting Claws.</em></strong> Your talons are sharp and dangerous. You are proficient with this attack; you can make a unarmed melee attack with your claws, dealing 1d6 + your DEX or your STR. </p>
+            <p class="indent"><strong><em>Dextrous Talons.</em></strong> Your clawed feet are highly agile and capable of being used to hold objects and make gestures while flying. Though they are good for carrying items while flying, it's admittedly difficult to use the items you carry while flying. You have disadvantage with any non-unarmed weapon attacks while flying.</p>
+            <p class="indent"><strong><em>Languages.</em></strong>  You can speak, read, and write Common. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORAIVS_HARPY_SUBRACE"/>
+            <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORAIVS_DEXTROUS_TALONS" />
+            <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORAIVS_CUTTING_CLAWS" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <stat name="Innate speed" value="25" bonus="0" />
+            <stat name="innate speed:fly" value="35" bonus="base" equipped="![armor:heavy]" />
+        </rules>
+    </element>
+    
+    
+</elements>

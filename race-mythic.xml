@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="Mythic" type="Race" source="Soravis" id="ID_SAMPI_SENPAI_SORVIS_RACE_MYTHIC">
+        <description>
+            <p class="flavor">Mythics are humans who were exposed to a dangerous amount of wild magic on the surface of this planet, but rather than simply mutating, their bodies adopted the magic. For whatever reason, these 'traits', while widely varying, can be passed down through families. As such, over the generations, the Mythics were officially 'adopted' as a species.</p>
+            <h4>HEADING</h4>
+            <p></p>
+            <p class="indent"></p>
+            <h4>HEADING</h4>
+            <p></p>
+            <p class="indent"></p>
+            <h4>name Traits</h4>
+            <p></p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> You Gain a +2 bounus to a chosen Ability Score.</p>
+            <p class="indent"><strong><em>Age.</em></strong>  Mythics age at very strange rates; They reach adulthood at around 21 years of age, but there's no real way to tell how long they'll live afterwards. Most Mythics live to 100, but there've been reports of Mythics living up to tens of thousands of years. Only time will tell.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong>  Much like the chaotic energy that flows through their soul, Mythics are generally chaotic creatures. They're typically very passionate about the stances they take, so they most often heavily align to good or evil, with very few taking a neutral stance.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Mythics come in all shapes and sizes, ranging from a measly 4 feet to an impressive 8. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Innate Magic</em></strong>You may choose 1 cantrip from the Wizards spell list. At 3rd level, choose any single 1st level spell. At 5th choose a 2nd level spell. </p>
+            <p>For the spells, use your Intelligence for to hit and spell save. You may cast either your innate spells once per long rest without requiring a spell slot or material component. These spells can only be cast at their most basic level.</p>
+            <p class="indent"><strong><em>Mystic Vision.</em></strong>  You can see in the dark up to 30 feet, and can also see items and persons affected by magic within 30 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other Exotic language of your choice.</p>
+            <p class="indent"><strong><em>Subrace</em></strong> Although Mythics vary greatly they can be split into 2 main groups. Choose one of the following subraces, gaining the benefits listed.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="Innate speed" value="30" bonus="base" />
+            <select type="Racial Trait" name="Ability Score Increase (Mythict)" supports="Mythic" number="1" />
+            <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORVIS_MYSTIC_VISION" />
+            <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORVIS_MYTHIC_SUBRACE"/>
+            <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORVIS_MTYHIC_INNATE_MAGIC"/>
+        </rules>
+    </element>
+     <element name="Mistic Vision" type="Racial Trait" source="Soravis" id="ID_SAMPI_SENPAI_SORVIS_MYSTIC_VISION">
+     <requirements>!ID_SAMPI_SENPAI_MYTHIC_PSION</requirements>
+        <description>
+            <p> You can see in the dark up to 30 feet, and can also see items and persons affected by magic within 30 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</p>
+        </description>
+        <sheet>
+            <description>You can see in the dark up to 30 feet, and can also see items and persons affected by magic within 30 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</description>
+        </sheet>
+    </element>
+    <element name="Innate Magic" type="Racial Trait" source="Soravis" id="ID_SAMPI_SENPAI_SORVIS_MTYHIC_INNATE_MAGIC">
+      <description>
+        <p>You may choose 1 cantrip from the Wizards spell list. At 3rd level, choose any single 1st level spell. At 5th choose a 2nd level spell. </p>
+            <p>For the spells, use your Intelligence for to hit and spell save. You may cast either your innate spells once per long rest without requiring a spell slot or material component. These spells can only be cast at their most basic level.</p>
+      </description>
+      <sheet>
+        <description>Choose 1 cantrip from the Wizards spell list. At 3rd level, choose any single 1st level spell. At 5th choose a 2nd level spell. You may cast either of your innate spells once per long rest without requiring a spell slot or material component. These spells can only be cast at their most basic level.</description>
+      </sheet>
+      <rules>
+        <select type="Spell" name="Wizard Cantrip (Mythic)" supports="Wizard&amp;&amp;0" />
+        <select type="Spell" name="Wizard Spell (Mythic)" supports="Wizard&amp;&amp;1" />
+        <select type="Spell" name="Wizard Spell (Mythic)" supports="Wizard&amp;&amp;2" level="5"/>
+      </rules>
+    </element>
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Soravis" id="ID_RACE_MYTHIC_VARIANT_STRENGTH">
+    <compendium display="false" />
+    <supports>Mythic</supports>
+    <description>
+      <p>Your Strength score increases by 2.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="strength" value="2" alt="Mythic" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Soravis" id="ID_RACE_MYTHIC_VARIANT_CONSTITUTION">
+    <compendium display="false" />
+    <supports>Mythic</supports>
+    <description>
+      <p>Your Constitution score increases by 2.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="constitution" value="2" alt="Mythic" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Soravis" id="ID_RACE_MYTHIC_VARIANT_WISDOM">
+    <compendium display="false" />
+    <supports>Mythic</supports>
+    <description>
+      <p>Your Wisdom score increases by 2.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="wisdom" value="2" alt="Mythic" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Soravis" id="ID_RACE_MYTHIC_VARIANT_CHARISMA">
+    <compendium display="false" />
+    <supports>Mythic</supports>
+    <description>
+      <p>Your Charisma score increases by 2.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="charisma" value="2" alt="Mythic" />
+    </rules>
+  </element>
+   <element name="Mythic Subrace" type="Racial Trait" source="Soravis" id="ID_SAMPI_SENPAI_SORVIS_MYTHIC_SUBRACE">
+    		<description>
+	    		<p>The 2 primary subraces of Mythics. Choose one.</p>
+    		</description>
+	    	<sheet display="false"/>
+	    	<rules>
+	    		<select type="Sub Race" name="Mythic Subrace" supports="Mythic" />
+	    	</rules>
+    </element>
+    <element name="Psion" type="Sub Race" source="Somnus Domina" id="ID_SAMPI_SENPAI_MYTHIC_PSION">
+	    <supports>Mythic</supports>
+	    <description>
+	    	<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+	    	<p class="indent"><strong><em>Mind of Mythic</em></strong> You can telepathically communicate with any creature that speaks at least one language within 30ft of you.</p>
+        <p class="indent"><strong><em>Masterful Sight</em></strong> Mystic Vision increases to 60ft.</p>
+        <p class="indent"><strong><em>Unimpeded Sight</em></strong> As an Action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use ti again until you’ve taken a long rest.</p>
+        </description>
+	    <sheet display="false"/>
+	     	<rules>
+	    	     <stat name="Intelligence" value="1" />
+	           <grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_MIND_OF_MYTHIC" />
+             <grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_MASTERFUL_SIGHT" />
+             <grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_UNIMPEDED_SIGHT" />
+    		</rules>
+    </element>
+    <element name="Mind of Mythic" type="Racial Trait" source="Soravis" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_MIND_OF_MYTHIC">
+      <description>
+        <p>You can telepathically communicate with any creature that speaks at least one language within 30ft of you.</p>
+      </description>
+      <sheet>
+        <description>You can telepathically communicate with any creature that speaks at least one language within 30ft of you.</description>
+      </sheet>
+    </element>
+    <element name="Masterful Sight" type="Racial Trait" source="Soravis" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_MASTERFUL_SIGHT">
+      <description>
+        <p>Mystic Vision increases to 60ft.</p>
+      </description>
+      <sheet>
+        <description>You can see in the dark up to 60 feet, and can also see items and persons affected by magic within 60 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</description>
+      </sheet>
+    </element>
+    <element name="Unimpeded Sight" type="Racial Trait" source="Soravis" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_UNIMPEDED_SIGHT">
+      <description>
+        <p>: As an Action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use ti again until you’ve taken a long rest.</p>
+      </description>
+      <sheet>
+        <description>: As an Action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use ti again until you’ve taken a long rest.</description>
+      </sheet>
+    </element>
+     <element name="Nimble" type="Sub Race" source="Soravis" id="ID_SAMPI_SENPAI_MYTHIC_NIMBLE">
+	    <supports>Mythic</supports>
+	    <description>
+	    	<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+	    	<p class="indent"><strong><em>Enhansed Speed</em></strong> Your walking speed is 35 feet.</p>
+        <p class="indent"><strong><em>Flow of the Weave</em></strong> Do to your nimble nature, you are hard to pin down. As a Bonus Action you can take the Dash or Disengage Action.</p>
+        <p class="indent"><strong><em>Arcane Step</em></strong> You can feel the flow of magic that exists all around you. Choose any point within 30ft that you can see. As a Bonus Action, you can magically teleport to that spot. Once you use this ability, you cannot use it again until you’ve taken a long rest.</p>
+        </description>
+	    <sheet display="false"/>
+	     	<rules>
+	    	     <stat name="Dexterity" value="1" />
+	           <stat name="Innate speed" value="5" bonus="base" />
+             <grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_FLOW_OF_THE_WEAVE" />
+             <grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_ARCANE_STEP" />
+    		</rules>
+    </element>
+    <element name="Flow or the Weave" type="Racial Trait" source="Soravis" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_FLOW_OF_THE_WEAVE">
+      <description>
+        <p>Do to your nimble nature, you are hard to pin down. As a Bonus Action you can take the Dash or Disengage Action.</p>
+      </description>
+      <sheet>
+      <description>As a Bonus Action you can take the Dash or Disengage Action.</description>
+      </sheet>
+    </element>
+    <element name="Arcane Step" type="Racial Trait" source="Soravis" id="ID_author_source_RACIAL_TID_SAMPI_SNEPAI_RACIAL_TRAIT_ARCANE_STEPRAIT_name">
+      <description>
+        <p>You can feel the flow of magic that exists all around you. Choose any point within 30ft that you can see. As a Bonus Action, you can magically teleport to that spot. Once you use this ability, you cannot use it again until you’ve taken a long rest.</p>
+      </description>
+      <sheet>
+        <description>Choose any point within 30ft that you can see. As a Bonus Action, you can magically teleport to that spot. Once you use this ability, you cannot use it again until you’ve taken a long rest.</description>
+      </sheet>
+    </element>
+</elements>

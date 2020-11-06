@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Soravis Campaign" type="Source" source="Core" id="ID_SOURCE_SORAVIS_CAMPAIGN">
+		<description>
+			<![CDATA[<p><strong>A world of magic, chaos, politics, and ambition.</strong></p><p>It is also Lexi's single biggest mistake.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">SOR</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
