@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<update version="0.1">
+			<file url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew/blob/main/source.xml" name="source.xml"/>
+		</update>
+	</info>
 	<element name="Soravis Campaign" type="Source" source="Core" id="ID_SOURCE_SORAVIS_CAMPAIGN">
 		<description>
 			<![CDATA[<p><strong>A world of magic, chaos, politics, and ambition.</strong></p><p>It is also Lexi's single biggest mistake.</p>]]>

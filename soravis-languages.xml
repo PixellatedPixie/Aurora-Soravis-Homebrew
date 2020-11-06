@@ -2,9 +2,11 @@
 <elements>
 	<info>
 		<name>Homebrewed Languages</name>
+		<update version="0.1">
+			<file url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew/blob/main/soravis-languages.xml" name="soravis-languages.xml"/>
+		</update>
 	</info>
-
-	<!-- standard -->
+		<!-- standard -->
 	<element name="Grimalkinn" type="Language" source="Soravis Campaign" id="ID_LANGUAGE_GRIMALKINN">
 		<supports>Exotic</supports>
 		<description>
