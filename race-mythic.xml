@@ -7,6 +7,7 @@
 			<file name="race-mythic.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-mythic.xml" />
 		</update>
 	</info>
+	
     <element name="Mythic" type="Race" source="Soravis Campaign" id="ID_RACE_MYTHIC">
         <description>
             <p class="flavor">Mythics are humans who were exposed to a dangerous amount of wild magic on the surface of this planet, but rather than simply mutating, their bodies adopted the magic. For whatever reason, these 'traits', while widely varying, can be passed down through families. As such, over the generations, the Mythics were officially 'adopted' as a species.</p>
@@ -117,10 +118,10 @@
     <element name="Psion" type="Sub Race" source="Soravis Campaign" id="ID_SAMPI_SENPAI_MYTHIC_PSION">
 	    <supports>Mythic</supports>
 	    <description>
-		<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
-	    <p class="indent"><strong><em>Mind of Mythic</em></strong> You can telepathically communicate with any creature that speaks at least one language within 30ft of you.</p>
-        <p class="indent"><strong><em>Masterful Sight</em></strong> Mystic Vision increases to 60ft.</p>
-        <p class="indent"><strong><em>Unimpeded Sight</em></strong> As an action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use it again until you’ve taken a long rest.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+			<p class="indent"><strong><em>Mind of Mythic</em></strong> You can telepathically communicate with any creature that speaks at least one language within 30ft of you.</p>
+			<p class="indent"><strong><em>Masterful Sight</em></strong> Mystic Vision increases to 60ft.</p>
+			<p class="indent"><strong><em>Unimpeded Sight</em></strong> As an action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use it again until you’ve taken a long rest.</p>
         </description>
 	    <sheet display="false"/>
 	     	<rules>
