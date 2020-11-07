@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Homebrewed Languages</name>
+		<update version="0.1">
+			<file url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/soravis-languages.xml" name="soravis-languages.xml"/>
+		</update>
+	</info>
+		<!-- standard -->
+	<element name="Grimalkinn" type="Language" source="Soravis Campaign" id="ID_LANGUAGE_GRIMALKINN">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Grimalkinn.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Grimalkinns</set>
+			<set name="script">Grimalkinn</set>
+		</setters>
+	</element>
+</elements>

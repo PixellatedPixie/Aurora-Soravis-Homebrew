@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grimalkinn</name>
+		<author url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew">PixellatedPixie</author>
+		<update version="1.1">
+			<file name="race-grimalkinn.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-grimalkinn.xml" />
+		</update>
+	</info>
+	
+	<element name="Grimalkinn" type="Race" source="Soravis Campaign" id="ID_RACE_GRIMALKINN">
+		<description>
+			<p class="flavor">Ferocious felines of the forest, the Grimalkinn are wise and swift. While some believe them to be a subspecies of the common Tabaxi, their true origin is unknown. These small, feline humanoids live in secretive clans, often hiding on the edges of other civilizations.</p>
+			<h4>RESOURCEFUL SCAVENGERS</h4>
+			<p>Grimalkinn make ingenious use of what other civilizations cast off. They re-forge scrap metal into tools and weapons, and sew discarded rags into exquisite clothing. They are especially creative when it comes to food, hunting creatures that other cultures consider vermin and cooking foods others consider spoiled. Grimalkinn who leave their clans often find employment as cooks on dangerous expeditions, using their native culinary skills to conjure delicious meals out of unlikely ingredients.</p>
+			<h4>HONOR-BOUND</h4>
+			<p>Grimalkinn society places great importance in personal honor. A grimalkinn builds his or her honor by serving the clan well, and by honoring promises. Grimalkinn who go back on their word or abandon their duty find themselves cast out from their clan and forced to seek a living among the other races. Such outcasts often find companionship, and a familiar focus on honor, in the military structure of mercenary bands, where they make themselves indispensable in and out of battle.</p>
+			<h4>GRIMALKINN TRAITS</h4>
+			<p>Your feline blood serves you in many ways, each contributing to your species' natural affinity for the hunt.</p>
+			<p>
+			<span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 2, and your Wisdom score increases by 1.
+			<br />
+			<span class="feature">Age.</span>Although they appear young, Grimalkinn age roughly at the same pace as their tabaxi counterparts. They mature at 18 and can live as long as 80 years, though some have survived to well over 100.
+			<br />
+			<span class="feature">Alignment.</span>Though they are proud and honor-bound, their natural curiosity betrays them. Many Grimalkinn lean towards Chaotic, seeking adventures and treasures where they can.
+			<br />
+			<span class="feature">Size.</span>Though their bravado would state otherwise, the Grimalkinn are closer in size to a true felid than the other species of feline humanoids, standing between 3 and 4 feet, and weighing between 30 and 60 pounds. Your size is Small.
+			<br />
+			<span class="feature">Speed.</span>While you are small, you are swift. Your speed is 30ft. In addition, you have natural claws that allow you to climb various surfaces. You also have a climb speed of 20ft. 
+			<br />
+			<span class="feature">Born Survivor.</span>As a creature of the wild, you are predisposed towards living in rough environments. You gain proficiency in both Nature and Survival.
+			<br />
+			<span class="feature">Natural Weapon.</span>Your paws contain well hidden claws used for scratching enemies that get too close. You are proficient in this unarmed attack, which deals 1d4 slashing damage + your Strength modifier.
+			<br />
+			<span class="feature">Darkvision.</span>You have a cat’s keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
+			<br />
+			<span class="feature">Forest Scavenger.</span>Whenever you scavenge for food, you always know how to find enough food for you as well as 3 others.
+			<br />
+			<span class="feature">Languages.</span>You can speak, read, and write Common and Grimalkinn.
+			<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="wisdom" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_GRIMALKINN" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GRIMALKINN_NATURAL_WEAPON" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BORN_SURVIVOR" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FOREST_SCAVENGER" />
+		</rules>
+	</element>
+	<element name="Forest Scavenger" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_FOREST_SCAVENGER">
+		<description>
+			<p>Whenever you scavenge for food, you always know how to find enough food for you as well as 3 others.</p>
+		</description>
+		<sheet>
+			<description>Whenever you scavenge for food, you always know how to find enough food for you as well as 3 others.</description>
+		</sheet>
+	</element>
+	<element name="Natural Weapon" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_GRIMALKINN_NATURAL_WEAPON">
+		<description>
+			<p>Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4+{{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="20" bonus="base" />
+		</rules>
+	</element>
+	<element name="Born Survivor" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_BORN_SURVIVOR">
+		<description>
+			<p>You have proficiency in the Nature and Survival skills.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Nature and Survival skills.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>  
+</elements>
