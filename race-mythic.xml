@@ -39,7 +39,7 @@
             <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORVIS_MTYHIC_INNATE_MAGIC"/>
         </rules>
     </element>
-     <element name="Mistic Vision" type="Racial Trait" source="Soravis" id="ID_SAMPI_SENPAI_SORVIS_MYSTIC_VISION">
+     <element name="Mistic Vision" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SENPAI_SORVIS_MYSTIC_VISION">
      <requirements>!ID_SAMPI_SENPAI_MYTHIC_PSION</requirements>
         <description>
             <p> You can see in the dark up to 30 feet, and can also see items and persons affected by magic within 30 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</p>
@@ -48,7 +48,7 @@
             <description>You can see in the dark up to 30 feet, and can also see items and persons affected by magic within 30 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</description>
         </sheet>
     </element>
-    <element name="Innate Magic" type="Racial Trait" source="Soravis" id="ID_SAMPI_SENPAI_SORVIS_MTYHIC_INNATE_MAGIC">
+    <element name="Innate Magic" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SENPAI_SORVIS_MTYHIC_INNATE_MAGIC">
       <description>
         <p>You may choose 1 cantrip from the Wizards spell list. At 3rd level, choose any single 1st level spell. At 5th choose a 2nd level spell. </p>
             <p>For the spells, use your Intelligence for to hit and spell save. You may cast either your innate spells once per long rest without requiring a spell slot or material component. These spells can only be cast at their most basic level.</p>
@@ -62,7 +62,7 @@
         <select type="Spell" name="Wizard Spell (Mythic)" supports="Wizard&amp;&amp;2" level="5"/>
       </rules>
     </element>
-    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Soravis" id="ID_RACE_MYTHIC_VARIANT_STRENGTH">
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Soravis Campaign" id="ID_RACE_MYTHIC_VARIANT_STRENGTH">
     <compendium display="false" />
     <supports>Mythic</supports>
     <description>
@@ -73,7 +73,7 @@
       <stat name="strength" value="2" alt="Mythic" />
     </rules>
   </element>
-  <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Soravis" id="ID_RACE_MYTHIC_VARIANT_CONSTITUTION">
+  <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Soravis Campaign" id="ID_RACE_MYTHIC_VARIANT_CONSTITUTION">
     <compendium display="false" />
     <supports>Mythic</supports>
     <description>
@@ -84,7 +84,7 @@
       <stat name="constitution" value="2" alt="Mythic" />
     </rules>
   </element>
-  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Soravis" id="ID_RACE_MYTHIC_VARIANT_WISDOM">
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Soravis Campaign" id="ID_RACE_MYTHIC_VARIANT_WISDOM">
     <compendium display="false" />
     <supports>Mythic</supports>
     <description>
@@ -95,7 +95,7 @@
       <stat name="wisdom" value="2" alt="Mythic" />
     </rules>
   </element>
-  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Soravis" id="ID_RACE_MYTHIC_VARIANT_CHARISMA">
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Soravis Campaign" id="ID_RACE_MYTHIC_VARIANT_CHARISMA">
     <compendium display="false" />
     <supports>Mythic</supports>
     <description>
@@ -165,10 +165,10 @@
         </description>
 	    <sheet display="false"/>
 	     	<rules>
-	    	     <stat name="Dexterity" value="1" />
-	           <stat name="Innate speed" value="5" bonus="base" />
-             <grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_FLOW_OF_THE_WEAVE" />
-             <grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_ARCANE_STEP" />
+				<stat name="Dexterity" value="1" />
+				<stat name="Innate speed" value="5" bonus="base" />
+				<grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_FLOW_OF_THE_WEAVE" />
+				<grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_ARCANE_STEP" />
     		</rules>
     </element>
     <element name="Flow or the Weave" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_FLOW_OF_THE_WEAVE">

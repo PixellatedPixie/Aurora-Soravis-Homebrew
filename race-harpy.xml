@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Harpy - INCOMPLETE. DO NOT USE</name>
+		<name>Harpy is INCOMPLETE. DO NOT USE</name>
 		<author url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew">PixellatedPixie</author>
 		<update version="1.1">
 			<file name="race-harpy.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-harpy.xml" />
