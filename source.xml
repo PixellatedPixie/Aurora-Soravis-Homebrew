@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew/blob/main/source.xml" name="source.xml"/>
+			<file url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/source.xml" name="source.xml"/>
 		</update>
 	</info>
 	

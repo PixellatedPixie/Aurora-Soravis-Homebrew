@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Soravis Campaign</name>
+		<description>Look, I just wanted to have the Soravis files under a source file for convenience's sake; I had no clue that required me to host this shit on GitHub. It's too late to turn back, though! uwu</description>
+		<author url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew">PixellatedPixie</author>
+		<update version="0.2">
+			<file name="soravis-campaign.index" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/soravis-campaign.index" />
+		</update>
+	</info>
+	<files>	
+		<file name="source.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/source.xml" />
+		
+		<!-- races -->
+		<file name="race-grimalkinn.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-grimalkinn.xml" />
+		<file name="race-mythic.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-mythic.xml" />
+		<file name="race-harpy.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-harpy.xml" />
+		<!-- classes -->
+		
+		<!-- backgrounds -->		
+		
+		<!-- items -->
+
+		<!-- misc -->
+		<file name="soravis-languages.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/soravis-languages.xml" />
+	</files>
+</index>

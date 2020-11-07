@@ -3,7 +3,7 @@
 	<info>
 		<name>Homebrewed Languages</name>
 		<update version="0.1">
-			<file url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew/blob/main/soravis-languages.xml" name="soravis-languages.xml"/>
+			<file url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/soravis-languages.xml" name="soravis-languages.xml"/>
 		</update>
 	</info>
 		<!-- standard -->
