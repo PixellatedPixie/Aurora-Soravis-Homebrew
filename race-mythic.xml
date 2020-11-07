@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <element name="Mythic" type="Race" source="Soravis" id="ID_SAMPI_SENPAI_SORVIS_RACE_MYTHIC">
+	<info>
+		<name>Mythic</name>
+		<author url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew">PixellatedPixie</author>
+		<update version="1.1">
+			<file name="race-mythic.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-mythic.xml" />
+		</update>
+	</info>
+    <element name="Mythic" type="Race" source="Soravis Campaign" id="ID_RACE_MYTHIC">
         <description>
             <p class="flavor">Mythics are humans who were exposed to a dangerous amount of wild magic on the surface of this planet, but rather than simply mutating, their bodies adopted the magic. For whatever reason, these 'traits', while widely varying, can be passed down through families. As such, over the generations, the Mythics were officially 'adopted' as a species.</p>
             <h4>HEADING</h4>
@@ -98,7 +105,7 @@
       <stat name="charisma" value="2" alt="Mythic" />
     </rules>
   </element>
-   <element name="Mythic Subrace" type="Racial Trait" source="Soravis" id="ID_SAMPI_SENPAI_SORVIS_MYTHIC_SUBRACE">
+   <element name="Mythic Subrace" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SENPAI_SORVIS_MYTHIC_SUBRACE">
     		<description>
 	    		<p>The 2 primary subraces of Mythics. Choose one.</p>
     		</description>
@@ -107,13 +114,13 @@
 	    		<select type="Sub Race" name="Mythic Subrace" supports="Mythic" />
 	    	</rules>
     </element>
-    <element name="Psion" type="Sub Race" source="Somnus Domina" id="ID_SAMPI_SENPAI_MYTHIC_PSION">
+    <element name="Psion" type="Sub Race" source="Soravis Campaign" id="ID_SAMPI_SENPAI_MYTHIC_PSION">
 	    <supports>Mythic</supports>
 	    <description>
-	    	<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
-	    	<p class="indent"><strong><em>Mind of Mythic</em></strong> You can telepathically communicate with any creature that speaks at least one language within 30ft of you.</p>
+		<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+	    <p class="indent"><strong><em>Mind of Mythic</em></strong> You can telepathically communicate with any creature that speaks at least one language within 30ft of you.</p>
         <p class="indent"><strong><em>Masterful Sight</em></strong> Mystic Vision increases to 60ft.</p>
-        <p class="indent"><strong><em>Unimpeded Sight</em></strong> As an Action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use ti again until you’ve taken a long rest.</p>
+        <p class="indent"><strong><em>Unimpeded Sight</em></strong> As an action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use it again until you’ve taken a long rest.</p>
         </description>
 	    <sheet display="false"/>
 	     	<rules>
@@ -123,7 +130,7 @@
              <grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_UNIMPEDED_SIGHT" />
     		</rules>
     </element>
-    <element name="Mind of Mythic" type="Racial Trait" source="Soravis" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_MIND_OF_MYTHIC">
+    <element name="Mind of Mythic" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_MIND_OF_MYTHIC">
       <description>
         <p>You can telepathically communicate with any creature that speaks at least one language within 30ft of you.</p>
       </description>
@@ -131,7 +138,7 @@
         <description>You can telepathically communicate with any creature that speaks at least one language within 30ft of you.</description>
       </sheet>
     </element>
-    <element name="Masterful Sight" type="Racial Trait" source="Soravis" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_MASTERFUL_SIGHT">
+    <element name="Masterful Sight" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_MASTERFUL_SIGHT">
       <description>
         <p>Mystic Vision increases to 60ft.</p>
       </description>
@@ -139,15 +146,15 @@
         <description>You can see in the dark up to 60 feet, and can also see items and persons affected by magic within 60 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</description>
       </sheet>
     </element>
-    <element name="Unimpeded Sight" type="Racial Trait" source="Soravis" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_UNIMPEDED_SIGHT">
+    <element name="Unimpeded Sight" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_UNIMPEDED_SIGHT">
       <description>
-        <p>: As an Action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use ti again until you’ve taken a long rest.</p>
+        <p>: As an Action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use it again until you’ve taken a long rest.</p>
       </description>
       <sheet>
-        <description>: As an Action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use ti again until you’ve taken a long rest.</description>
+        <description>: As an Action, you can magically cut through magical barriers that impede your sight. For one minute, you can see through magical darkness and have advantage to see through Illusions. Once you use this ability, you cannot use it again until you’ve taken a long rest.</description>
       </sheet>
     </element>
-     <element name="Nimble" type="Sub Race" source="Soravis" id="ID_SAMPI_SENPAI_MYTHIC_NIMBLE">
+     <element name="Nimble" type="Sub Race" source="Soravis Campaign" id="ID_SAMPI_SENPAI_MYTHIC_NIMBLE">
 	    <supports>Mythic</supports>
 	    <description>
 	    	<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
@@ -163,17 +170,17 @@
              <grant type="Racial Trait" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_ARCANE_STEP" />
     		</rules>
     </element>
-    <element name="Flow or the Weave" type="Racial Trait" source="Soravis" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_FLOW_OF_THE_WEAVE">
+    <element name="Flow or the Weave" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SNEPAI_RACIAL_TRAIT_FLOW_OF_THE_WEAVE">
       <description>
-        <p>Do to your nimble nature, you are hard to pin down. As a Bonus Action you can take the Dash or Disengage Action.</p>
+        <p>Due to your nimble nature, you are hard to pin down. As a Bonus Action you can take the Dash or Disengage Action.</p>
       </description>
       <sheet>
-      <description>As a Bonus Action you can take the Dash or Disengage Action.</description>
+      <description>As a bonus action you can take the Dash or Disengage Action.</description>
       </sheet>
     </element>
-    <element name="Arcane Step" type="Racial Trait" source="Soravis" id="ID_author_source_RACIAL_TID_SAMPI_SNEPAI_RACIAL_TRAIT_ARCANE_STEPRAIT_name">
+    <element name="Arcane Step" type="Racial Trait" source="Soravis Campaign" id="ID_author_source_RACIAL_TID_SAMPI_SNEPAI_RACIAL_TRAIT_ARCANE_STEPRAIT_name">
       <description>
-        <p>You can feel the flow of magic that exists all around you. Choose any point within 30ft that you can see. As a Bonus Action, you can magically teleport to that spot. Once you use this ability, you cannot use it again until you’ve taken a long rest.</p>
+        <p>You can feel the flow of magic that exists all around you. Choose any point within 30ft that you can see. As a bonus action, you can magically teleport to that spot. Once you use this ability, you cannot use it again until you’ve taken a long rest.</p>
       </description>
       <sheet>
         <description>Choose any point within 30ft that you can see. As a Bonus Action, you can magically teleport to that spot. Once you use this ability, you cannot use it again until you’ve taken a long rest.</description>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <element name="Harpy" type="Race" source="Soravis" id="ID_SAMPI_SENPAI_HARPY">
+	<info>
+		<name>Harpy - INCOMPLETE. DO NOT USE</name>
+		<author url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew">PixellatedPixie</author>
+		<update version="1.1">
+			<file name="race-harpy.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-harpy.xml" />
+		</update>
+	</info>
+	
+    <element name="Harpy" type="Race" source="Soravis Campaign" id="ID_RACE_HARPY">
         <description>
             <p>Once terrifying creatures that roamed the mountaintops, feasting on whatever poor adventurers walked through their domain, these harpies have evolved to fit into common societies. They can range anywhere from commonfolk going about their daily lives to soldiers guarding a city to land-dwelling watchers and rangers to quiet assassins with silent flight. Though almost all of them have abandoned their monstrous ways, they may still carry slight tendencies from their older days. </p>
             <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constution score increses by 2.</p>
