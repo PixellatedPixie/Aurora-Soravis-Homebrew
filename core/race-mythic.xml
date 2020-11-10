@@ -11,21 +11,20 @@
     <element name="Mythic" type="Race" source="Soravis Campaign" id="ID_RACE_MYTHIC">
         <description>
             <p class="flavor">Mythics are humans who were exposed to a dangerous amount of wild magic on the surface of this planet, but rather than simply mutating, their bodies adopted the magic. For whatever reason, these 'traits', while widely varying, can be passed down through families. As such, over the generations, the Mythics were officially 'adopted' as a species.</p>
-            <h4>HEADING</h4>
-            <p></p>
+            <h4>A DIVERSE PEOPLE</h4>
+            <p>Due to their magical nature, Mythics are radically different from other humanoids, and even vary significantly among themselves. Even to the Verniril's top researchers, the controlled chaos of their existence is a mystery. </p>
             <p class="indent"></p>
-            <h4>HEADING</h4>
-            <p></p>
+            <h4>ONE WITH THE ARCANE WORLD</h4>
+            <p>As creatures defined by their connection to Soravis' abundance of wild magic, Mythics are more inclined towards the magical arts, even showing innate abilities with them, and some talents beyond the capability of a conventional spell. This makes them very valuable as workers for arcane and intellectual institutes.</p>
             <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> You Gain a +2 bounus to a chosen Ability Score.</p>
+            <h4>MYTHIC TRAITS</h4>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> You gain a +2 bounus to a chosen Ability Score.</p>
             <p class="indent"><strong><em>Age.</em></strong>  Mythics age at very strange rates; They reach adulthood at around 21 years of age, but there's no real way to tell how long they'll live afterwards. Most Mythics live to 100, but there've been reports of Mythics living up to tens of thousands of years. Only time will tell.</p>
             <p class="indent"><strong><em>Alignment.</em></strong>  Much like the chaotic energy that flows through their soul, Mythics are generally chaotic creatures. They're typically very passionate about the stances they take, so they most often heavily align to good or evil, with very few taking a neutral stance.</p>
             <p class="indent"><strong><em>Size.</em></strong> Mythics come in all shapes and sizes, ranging from a measly 4 feet to an impressive 8. Your size is Medium.</p>
             <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
             <p class="indent"><strong><em>Innate Magic</em></strong>You may choose 1 cantrip from the Wizards spell list. At 3rd level, choose any single 1st level spell. At 5th choose a 2nd level spell. </p>
-            <p>For the spells, use your Intelligence for to hit and spell save. You may cast either your innate spells once per long rest without requiring a spell slot or material component. These spells can only be cast at their most basic level.</p>
+            <p>For the spells, use your Intelligence for to hit and spell save. You may cast either of your innate spells once per long rest without requiring a spell slot or material component. These spells can only be cast at their most basic level.</p>
             <p class="indent"><strong><em>Mystic Vision.</em></strong>  You can see in the dark up to 30 feet, and can also see items and persons affected by magic within 30 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</p>
             <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other Exotic language of your choice.</p>
             <p class="indent"><strong><em>Subrace</em></strong> Although Mythics vary greatly they can be split into 2 main groups. Choose one of the following subraces, gaining the benefits listed.</p>
@@ -58,7 +57,7 @@
       </sheet>
       <rules>
         <select type="Spell" name="Wizard Cantrip (Mythic)" supports="Wizard&amp;&amp;0" />
-        <select type="Spell" name="Wizard Spell (Mythic)" supports="Wizard&amp;&amp;1" />
+        <select type="Spell" name="Wizard Spell (Mythic)" supports="Wizard&amp;&amp;1" level="3"/>
         <select type="Spell" name="Wizard Spell (Mythic)" supports="Wizard&amp;&amp;2" level="5"/>
       </rules>
     </element>
