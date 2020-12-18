@@ -184,15 +184,8 @@
 			<p>Your tail is prehensile and can manipulate objects up to a range of 10 feet. The tail can only lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options. Your tail can't wield weapons, shields, or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</p>
 		</description>
 		<sheet>
-			<description>Your tail is prehensile and can manipulate objects up to a range of 10 feet. The tail can only lift {{tail:capacity}} pounds. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. It can't wield weapons, shields, or do anything that requires manual precision.</description>
+			<description>Your tail is prehensile and can manipulate objects up to a range of 10 feet. The tail can only lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. It can't wield weapons, shields, or do anything that requires manual precision.</description>
 		</sheet>
-		<rules>
-		<stat name="tail:capacity" value="strength"/>
-		<stat name="tail:capacity" value="strength"/>
-		<stat name="tail:capacity" value="strength"/>
-		<stat name="tail:capacity" value="strength"/>
-		<stat name="tail:capacity" value="strength"/>
-		</rules>
 	</element>
 	<element name="Tail Lash" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_TAIL_LASH">
 		<description>
