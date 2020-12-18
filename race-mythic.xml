@@ -2,6 +2,7 @@
 <elements>
 	<info>
 		<name>Mythic</name>
+		<description></description>
 		<author url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew">PixellatedPixie</author>
 		<update version="1.1">
 			<file name="race-mythic.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-mythic.xml" />
@@ -23,7 +24,7 @@
             <p class="indent"><strong><em>Alignment.</em></strong>  Much like the chaotic energy that flows through their soul, Mythics are generally chaotic creatures. They're typically very passionate about the stances they take, so they most often heavily align to good or evil, with very few taking a neutral stance.</p>
             <p class="indent"><strong><em>Size.</em></strong> Mythics come in all shapes and sizes, ranging from a measly 4 feet to an impressive 8. Your size is Medium.</p>
             <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
-            <p class="indent"><strong><em>Innate Magic</em></strong>You may choose 1 cantrip from the Wizards spell list. At 3rd level, choose any single 1st level spell. At 5th choose a 2nd level spell. </p>
+            <p class="indent"><strong><em>Innate Magic.</em></strong> You may choose 1 cantrip from the Wizards spell list. At 3rd level, choose any single 1st level spell. At 5th choose a 2nd level spell. </p>
             <p>For the spells, use your Intelligence for to hit and spell save. You may cast either of your innate spells once per long rest without requiring a spell slot or material component. These spells can only be cast at their most basic level.</p>
             <p class="indent"><strong><em>Mystic Vision.</em></strong>  You can see in the dark up to 30 feet, and can also see items and persons affected by magic within 30 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</p>
             <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other Exotic language of your choice.</p>
@@ -32,13 +33,13 @@
         <sheet display="false" />
         <rules>
             <stat name="Innate speed" value="30" bonus="base" />
-            <select type="Racial Trait" name="Ability Score Increase (Mythict)" supports="Mythic" number="1" />
+            <select type="Racial Trait" name="Ability Score Increase (Mythic)" supports="Mythic" number="1" />
             <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORVIS_MYSTIC_VISION" />
             <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORVIS_MYTHIC_SUBRACE"/>
             <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORVIS_MTYHIC_INNATE_MAGIC"/>
         </rules>
     </element>
-     <element name="Mistic Vision" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SENPAI_SORVIS_MYSTIC_VISION">
+     <element name="Mystic Vision" type="Racial Trait" source="Soravis Campaign" id="ID_SAMPI_SENPAI_SORVIS_MYSTIC_VISION">
      <requirements>!ID_SAMPI_SENPAI_MYTHIC_PSION</requirements>
         <description>
             <p> You can see in the dark up to 30 feet, and can also see items and persons affected by magic within 30 feet. Unlike detect magic, you need not use an action to see said auras, but you also cannot determine the school of the magic used.</p>
@@ -159,7 +160,7 @@
 	    <description>
 	    	<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
 	    	<p class="indent"><strong><em>Enhansed Speed</em></strong> Your walking speed is 35 feet.</p>
-        <p class="indent"><strong><em>Flow of the Weave</em></strong> Do to your nimble nature, you are hard to pin down. As a Bonus Action you can take the Dash or Disengage Action.</p>
+        <p class="indent"><strong><em>Flow of the Weave</em></strong> Due to your nimble nature, you are hard to pin down. As a Bonus Action you can take the Dash or Disengage Action.</p>
         <p class="indent"><strong><em>Arcane Step</em></strong> You can feel the flow of magic that exists all around you. Choose any point within 30ft that you can see. As a Bonus Action, you can magically teleport to that spot. Once you use this ability, you cannot use it again until you’ve taken a long rest.</p>
         </description>
 	    <sheet display="false"/>

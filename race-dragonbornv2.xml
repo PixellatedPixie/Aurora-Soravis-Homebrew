@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Revised Dragonborn</name>
+		<description></description>
+		<author url="https://www.reddit.com/user/nielspeterdejong/">nielspeterdejong</author>
+		<update version="0.2.3">
+			<file name="race-dragonbornv2.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-dragonbornv2.xml" />
+		</update>
+	</info>
+	
+	<element name="Revised Dragonborn" type="Race" source="Soravis Campaign" id="ID_RACE_REVISED_DRAGONBORN">
+		<description>
+			<p class="flavor">Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.</p>
+			<h4>PROUD DRAGONKIN</h4>
+			<p>Dragonborn look very much like dragons standing erect in humanoid form, though they lack wings or a tail. The first dragonborn had scales of vibrant hues matching the colors of their dragon kin, but generations of interbreeding have created a more uniform appearance. Their small, fine scales are usually brass or bronze in color, sometimes ranging to scarlet, rust, gold, or copper-green. They are tall and strongly built, often standing close to 6 1/2 feet tall and weighing 300 pounds or more. Their hands and feet are strong, talonlike claws with three fingers and a thumb on each hand.</p>
+			<p class="indent">The blood of a particular type of dragon runs very strong through some dragonborn clans. These dragonborn often boast scales that more closely match those of their dragon ancestor—bright red, green, blue, or white, lustrous black, or gleaming metallic gold, silver, brass, copper, or bronze.</p>
+			<h4>SELF-SUFFICIENT CLANS</h4>
+			<p>To any dragonborn, the clan is more important than life itself. Dragonborn owe their devotion and respect to their clan above all else, even the gods. Each dragonborn’s conduct reflects on the honor of his or her clan, and bringing dishonor to the clan can result in expulsion and exile. Each dragonborn knows his or her station and duties within the clan, and honor demands maintaining the bounds of that position.</p>
+			<p class="indent">A continual drive for self-improvement reflects the self-sufficiency of the race as a whole. Dragonborn value skill and excellence in all endeavors. They hate to fail, and they push themselves to extreme efforts before they give up on something. A dragonborn holds mastery of a particular skill as a lifetime goal. Members of other races who share the same commitment find it easy to earn the respect of a dragonborn.</p>
+			<p class="indent">Though all dragonborn strive to be self-sufficient, they recognize that help is sometimes needed in difficult situations. But the best source for such help is the clan, and when a clan needs help, it turns to another dragonborn clan before seeking aid from other races— or even from the gods.</p>
+			<h4>DRAGONBORN NAMES</h4>
+			<p>Dragonborn have personal names given at birth, but they put their clan names first as a mark of honor. A childhood name or nickname is often used among clutchmates as a descriptive term or a term of endearment. The name might recall an event or center on a habit.</p>
+			<p>
+			<b>Male Names: </b>Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn
+			<br/>
+			<b>Female Names: </b>Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit
+			<br/>
+			<b>Childhood Names: </b>Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous
+			<br/>
+			<b>Clan Names: </b>Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit
+			<br/>
+			</p>
+			<h4>DRAGONBORN TRAITS</h4>
+			<p>Your draconic heritage manifests in a variety of traits you share with other dragonborn.</p>
+			<p>
+			<span class="feature">Ability Score Increase.</span>Your Strength score increases by 2, and one other ability score of your choice increases by 1.
+			<br />
+			<span class="feature">Age.</span>Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.
+			<br />
+			<span class="feature">Alignment.</span>Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil (represented by Bahamut and Tiamat, respectively). Most dragonborn are good, but those who side with Tiamat can be terrible villains.
+			<br />
+			<span class="feature">Size.</span>Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.
+			<br />
+			<span class="feature">Speed.</span>Your base walking speed is 30 feet.
+			<br />
+			<span class="feature">Draconic Ancestry.</span>You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.
+			<br />
+			<span class="feature">Breath Weapon.</span>You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.
+			<br />
+			<span class="feature">Damage Resistance.</span>You have resistance to the damage type associated with your draconic ancestry.
+			<br />
+			<span class="feature">Dragon's Talons.</span>You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike. You may also use your jaws, which follow the same rules as your claws, but deal piercing damage instead.
+			<br />
+			<span class="feature">Languages.</span>You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.
+			<br />
+			<span class="feature">Subrace.</span>Choose one of the subraces below. Your choice will determine additional benefits.
+			<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn</set>
+			<set name="names" type="female">Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit</set>
+			<set name="names" type="childhood">Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous</set>
+			<set name="names" type="clan">Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit</set>
+			<set name="names-format">{{name}} {{clan}}</set>
+			<set name="height" modifier="2d8">5'6"</set>
+			<set name="weight" modifier="2d6">175 lb.</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="2" />
+			<select type="Racial Trait" name="Ability Score Increase (Revised Dragonborn)" supports="Revised Dragonborn" number="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BREATH_WEAPON" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRAGON2_SUBRACE" />
+		</rules>
+	</element>
+	<element name="Revised Dragonborn Subrace" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DRAGON2_SUBRACE">
+		<description>
+			<p>In addition to being aligned to a particular type of Dragon, Dragonborn also possess fragments of what makes up a True Dragon. These blessings cause them to be divided into four subraces, with Dreadcaller being the most common. Murkdwellers are the only ones with a tail, and are often shunned because of it. Choose one of these subraces for your character.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Revised Dragonborn Subrace" supports="Revised Dragonborn" />
+		</rules>
+	</element>	
+
+	<element name="Steelscale Dragonborn" type="Sub Race" source="Soravis Campaign" id="ID_SUB_RACE_STEELSCALE_DRAGON2">
+		<supports>Revised Dragonborn</supports>
+		<description>
+			<p class="indent"><strong><em>Hardened Scales.</em></strong> You gain a +1 bonus to your AC while not wearing heavy armor. Instead of this bonus, you can calculate your AC as 13 + your Dexterity modifier. A shield's benefits apply as normal and on top of either option.</p>
+			<p class="indent"><strong><em>Draconic Savagery.</em></strong> When you make an attack on your turn, or use your action to use your breath weapon, you can, as a bonus action, make an attack using your jaws. On a hit, it deals an additional 1d4 damage of the type you chose for Draconic Ancestry. This additional damage increases to 2d4 at 6th level, 3d4 at 11th level, and 4d4 at 16th level. Once you make this attack, you cannot do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HARDENED_SCALES" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRACONIC_SAVAGERY" />
+		</rules>
+	</element> 	
+	<element name="Hardened Scales" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_HARDENED_SCALES">
+		<description>
+			<p>You gain a +1 bonus to your AC while not wearing heavy armor. Instead of this bonus, you can calculate your AC as 13 + your Dexterity modifier. A shield's benefits apply as normal and on top of either option.</p>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to your AC while not wearing heavy armor. Instead of this bonus, you can simply have an AC of {{steelscale:dc}}. A shield's benefits apply as normal and on top of either option.</description>
+		</sheet>
+		<rules>
+		<stat name="ac:misc" bonus="racial" value="1" alt="Hardened Scales" equipped="![armor:heavy]"/>
+		<stat name="steelscale:dc" value="13"/>
+		<stat name="steelscale:dc" value="dexterity:modifier"/>
+		</rules>
+	</element>
+	<element name="Draconic Savagery" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DRACONIC_SAVAGERY">
+		<description>
+			<p>When you make an attack on your turn, or use your action to use your breath weapon, you can, as a bonus action, make an attack using your jaws. On a hit, it deals an additional 1d4 damage of the type you chose for Draconic Ancestry. This additional damage increases to 2d4 at 6th level, 3d4 at 11th level, and 4d4 at 16th level. Once you make this attack, you cannot do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Rest">
+			<description>When you make an attack on your turn, or use your action to use your breath weapon, you can, as a bonus action, make an attack using your jaws. On a hit, it deals {{draconic-savagery:dice count}}d4 {{draconic-ancestry:damage type}} damage.</description>
+		</sheet>
+		<rules>
+			<stat name="draconic-savagery:dice count" value="1" level="1"/>
+			<stat name="draconic-savagery:dice count" value="1" level="6"/>
+			<stat name="draconic-savagery:dice count" value="1" level="11"/>
+			<stat name="draconic-savagery:dice count" value="1" level="16"/>
+		</rules>
+	</element>
+	
+	<element name="Dreadcaller Dragonborn" type="Sub Race" source="Soravis Campaign" id="ID_SUB_RACE_DREADCALLER_DRAGON2">
+		<supports>Revised Dragonborn</supports>
+		<description>
+			<p class="indent"><strong><em>Draconic Fear.</em></strong> You can roar as an action, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw(DC 8 + your proficiency bonus + your Charisma modifier). They automatically succeed if they can't hear or see you. On a failed save, a target becomes frightened of you for 1 minute. If the frightened target takes any damage, it can repeat the saving throw, ending the effect on itself on a success. You regain the use of this trait after finishing a long rest.</p>
+			<p class="indent"><strong><em>Hardened Resistance.</em></strong> You have an echo of the toughness of a true Dragon. You can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRACONIC_FEAR" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HARDENED_RESISTANCE" />
+		</rules>
+	</element> 	
+	<element name="Draconic Fear" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DRACONIC_FEAR">
+		<description>
+			<p>You can roar as an action, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw(DC 8 + your proficiency bonus + your Charisma modifier). They automatically succeed if they can't hear or see you. On a failed save, a target becomes frightened of you for 1 minute. If the frightened target takes any damage, it can repeat the saving throw, ending the effect on itself on a success. You regain the use of this trait after finishing a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can roar as an action, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw(DC {{draconic-fear:dc}}). They automatically succeed if they can't hear or see you. On a failed save, a target becomes frightened of you for 1 minute. If the frightened target takes any damage, it can repeat the saving throw, ending the effect on itself on a success.</description>
+		</sheet>
+		<rules>
+		<stat name="draconic-fear:dc" value="8"/>
+		<stat name="draconic-fear:dc" value="charisma:modifier"/>
+		<stat name="draconic-fear:dc" value="proficiency"/>
+		</rules>
+	</element>
+	<element name="Hardened Resistance" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_HARDENED_RESISTANCE">
+		<description>
+			<p>You have an echo of the toughness of a true Dragon. You can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can reroll a saving throw that you fail. If you do so, you must use the new roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Murkdweller Dragonborn" type="Sub Race" source="Soravis Campaign" id="ID_SUB_RACE_MURKDWELLER_DRAGON2">
+		<supports>Revised Dragonborn</supports>
+		<description>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Prehensile Tail.</em></strong> Your tail is prehensile and can manipulate objects up to a range of 10 feet. The tail can only lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options. Your tail can't wield weapons, shields, or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</p>
+			<p class="indent"><strong><em>Tail Lash.</em></strong> You can use your tail to slap or trip up opponents. You may use your bonus action to shove an opponent within 5 feet of you. You can make shove actions to opponents within 10 feet, but if you do, you may only pull them 5 feet towards yourself. You may use this trait a number of times equal to your Strength modifier(minimum of 1). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PREHENSILE_TAIL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_TAIL_LASH" />
+		</rules>
+	</element> 	
+	<element name="Prehensile Tail" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_PREHENSILE_TAIL">
+		<description>
+			<p>Your tail is prehensile and can manipulate objects up to a range of 10 feet. The tail can only lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options. Your tail can't wield weapons, shields, or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</p>
+		</description>
+		<sheet>
+			<description>Your tail is prehensile and can manipulate objects up to a range of 10 feet. The tail can only lift {{tail:capacity}} pounds. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. It can't wield weapons, shields, or do anything that requires manual precision.</description>
+		</sheet>
+		<rules>
+		<stat name="tail:capacity" value="strength"/>
+		<stat name="tail:capacity" value="strength"/>
+		<stat name="tail:capacity" value="strength"/>
+		<stat name="tail:capacity" value="strength"/>
+		<stat name="tail:capacity" value="strength"/>
+		</rules>
+	</element>
+	<element name="Tail Lash" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_TAIL_LASH">
+		<description>
+			<p>You can use your tail to slap or trip up opponents. You may use your bonus action to shove an opponent within 5 feet of you. You can make shove actions to opponents within 10 feet, but if you do, you may only pull them 5 feet towards yourself. You may use this trait a number of times equal to your Strength modifier(minimum of 1). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{strength:modifier}}/Long Rest">
+			<description>You can use your tail to slap or trip up opponents. You may use your bonus action to shove an opponent within 5 feet of you. You can make shove actions to opponents within 10 feet, but if you do, you may only pull them 5 feet towards yourself.</description>
+		</sheet>
+	</element>
+	
+	<element name="Wayfarer Dragonborn" type="Sub Race" source="Soravis Campaign" id="ID_SUB_RACE_WAYFARER_DRAGON2">
+		<supports>Revised Dragonborn</supports>
+		<description>
+			<p class="indent"><strong><em>Wings.</em></strong> You have draconic wings sprouting from your shoulder blades. You have a flying speed of 30 feet while you aren't wearing heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:fly" value="30" bonus="base" equipped="![armor:heavy]" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DRAGON2_DEXTERITY">
+		<compendium display="false" />
+		<supports>Revised Dragonborn</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DRAGON2_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Revised Dragonborn</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DRAGON2_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Revised Dragonborn</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DRAGON2_WISDOM">
+		<compendium display="false" />
+		<supports>Revised Dragonborn</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DRAGON2_CHARISMA">
+		<compendium display="false" />
+		<supports>Revised Dragonborn</supports>
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="charisma" value="1"/>
+		</rules>
+	</element>
+	
+</elements>

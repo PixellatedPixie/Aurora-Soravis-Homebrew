@@ -1,35 +1,261 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Harpy is INCOMPLETE. DO NOT USE</name>
+		<name>Harpy</name>
+		<description></description>
 		<author url="https://github.com/PixellatedPixie/Aurora-Soravis-Homebrew">PixellatedPixie</author>
 		<update version="1.1">
 			<file name="race-harpy.xml" url="https://raw.githubusercontent.com/PixellatedPixie/Aurora-Soravis-Homebrew/main/race-harpy.xml" />
 		</update>
 	</info>
+
+	<element name="Harpy" type="Race" source="Soravis Campaign" id="ID_RACE_HARPY">
+		<description>
+			<p class="flavor">Once terrifying creatures that roamed the mountaintops, feasting on whatever poor adventurers walked through their domain, these harpies have evolved to fit into common societies. They can range anywhere from commonfolk going about their daily lives to soldiers guarding a city to land-dwelling watchers and rangers to quiet assassins with silent flight. Though almost all of them have abandoned their monstrous ways, they may still carry slight tendencies from their older days.</p>
+			<h4>HARPY TRAITS</h4>
+			<p>Your harpy character has a variety of natural abilities granted by their avian heritage.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Modern Harpies lifespans increased quite a bit from their ancestors to match the rate of other civilians. They age at the same rate as most civilians, hitting adulthood at 18, and live to about 200 to 300 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Harpy alignments vary considerably depending on where or how they were raised; Generally speaking, modern harpies will tend towards true neutral, focusing on mainly their own self-betterment.</p>
+			<p class="indent"><strong><em>Size.</em></strong> On average, harpies typically reach 5-6 feet in height. They're a bit lighter than other races of this height, averaging 100 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> You have a walking speed of 25 feet and a flying speed of 35 feet. You must land at the end of your turns; otherwise, you fall. Starting at 5th level, you no longer have to land at the end of each of your turns, as your feathers fully develop.</p>
+			<p class="indent"><strong><em>Cutting Claws.</em></strong> Your talons are sharp and dangerous. You are proficient with this attack; you can make a unarmed melee attack with your claws, dealing 1d6 + your DEX or your STR.</p>
+			<p class="indent"><strong><em>Dexterous Talons.</em></strong> Your clawed feet are highly agile and capable of being used to hold objects and make gestures while flying. Though they are good for carrying items while flying, it's admittedly difficult to use the items you carry while flying. You have disadvantage with any non-unarmed weapon attacks while flying.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Millenia of development in various environments has culminated in five main subraces: Wioquea harpies, Vanguard harpies, burrowing harpies, Shadowkeep harpies, and sea harpies. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d8">4'9"</set>
+			<set name="weight" modifier="1d4">85 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" />
+			<stat name="innate speed" value="25" bonus="base" /> 
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" /> 
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HARPY_SUBRACE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CUTTING_CLAWS" />  
+		</rules>
+	</element>
+	<element name="Cutting Claws" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_CUTTING_CLAWS">
+		<description>
+			<p>Your talons are sharp and dangerous. You are proficient with this attack; you can make a unarmed melee attack with your claws, dealing 1d6 + your DEX or your STR.</p>
+		</description>
+		<sheet>
+			<description>You are proficient with unarmed attacks made with your claws, dealing 1d6 + DEX or STR slashing damage.</description>
+		</sheet>
+	</element>
+	<element name="Dexterous Talons" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DEXTEROUS_TALONS">
+		<description>
+			<p>Your clawed feet are highly agile and capable of being used to hold objects and make gestures while flying. Though they are good for carrying items while flying, it's admittedly difficult to use the items you carry while flying. You have disadvantage with any non-unarmed weapon attacks while flying.</p>
+		</description>
+		<sheet>
+			<description>Your clawed feet are highly agile and capable of being used to hold objects and make gestures while flying. You have disadvantage with any non-unarmed weapon attacks while flying.</description>
+		</sheet>
+	</element>
+	<element name="Harpy Subrace" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_HARPY_SUBRACE">
+		<description>
+			<p>Millenia of development in various environments has culminated in five main subraces: Wioquea harpies, Vanguard harpies, burrowing harpies, Shadowkeep harpies, and sea harpies. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Harpy Subrace" supports="Harpy" />
+		</rules>
+	</element>
+
+	<element name="Wioquea Harpy" type="Sub Race" source="Soravis Campaign" id="ID_SUB_RACE_WIOQUEA_HARPY">
+		<supports>Harpy</supports>
+		<description>
+			<p>Kind, caring, and cunning, Wioquea harpies are the most common type of harpy. Typically found in cities and towns serving as merchants, these harpies have a way with their words. Wioquea harpies are typically musical and flighty, having beautiful and elegant voices with a wide range of notes.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Proficienies.</em></strong> You are proficient in the Persuasion skill.</p>
+			<p class="indent"><strong><em>Songbird.</em></strong> You know the Friends cantrip and can cast it at will. Additionally, you know the spell Charm Person, and can cast it once a long rest. Charisma is your casting stat for these abilities.</p>
+			<p class="indent"><strong><em>Extra Language.</em></strong> You can speak, read, and write one extra language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+			<stat name="innate speed:fly" value="35" bonus="base" equipped="![armor:heavy]" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SONGBIRD" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DEXTEROUS_TALONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element> 	
+	<element name="Songbird" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_SONGBIRD">
+		<description>
+			<p>You know the Friends cantrip and can cast it at will. Additionally, you know the spell Charm Person, and can cast it once a long rest. Charisma is your casting stat for these abilities.</p>
+		</description>
+		<sheet>
+			<description>You know the Friends cantrip and can cast it at will. Additionally, you know the spell Charm Person, and can cast it once a long rest. Charisma is your casting stat for these abilities.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FRIENDS" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" level="1" />
+		</rules>
+	</element>
+	<element name="Extra Language" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
+		<description>
+			<p>You can speak, read, and write one extra language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Harpy)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+
+	<element name="Vanguard Harpy" type="Sub Race" source="Soravis Campaign" id="ID_SUB_RACE_VANGUARD_HARPY">
+		<supports>Harpy</supports>
+		<description>
+			<p>Powerful, sharp, and proud, Vanguard harpies are tough as nails. These harpies generally serve as guards, mercenaries, or workers by utilizing their great strength. Vanguard Harpies tower over their fellow harpies, hitting on average 7- 8 feet. They have massive wingspans and long, powerful feathers more than capable of carrying intense amount of weight.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Proficienies.</em></strong> You are proficient in the Athletics skill.</p>
+			<p class="indent"><strong><em>Way of the Winged Warrior.</em></strong> You can wear heavy armor while flying, and you no longer have disadvantage with nonunarmed weapon attacks while flying.</p>
+			<p class="indent"><strong><em>Avian Resilience.</em></strong> Once per short or long rest, as a reaction, when you take damage, you can reduce the amount you take by 1d10 + your CON modifier.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">4'9"</set>
+			<set name="weight" modifier="1d4">85 lb.</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" />
+			<stat name="innate speed:fly" value="35" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WAY_OF_THE_WINGED_WARRIOR" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AVIAN_RESILIENCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+	<element name="Way of the Winged Warrior" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_WAY_OF_THE_WINGED_WARRIOR">
+		<description>
+			<p>Your clawed feet are highly agile and capable of being used to hold objects and make gestures while flying. You can attack as normal when flying.</p>
+		</description>
+		<sheet display="false">
+			<description>You can attack as normal while flying.</description>
+		</sheet>
+	</element>
+	<element name="Avian Resilience" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_AVIAN_RESILIENCE">
+		<description>
+			<p>Once per short or long rest, as a reaction, when you take damage, you can reduce the amount you take by 1d10 + your CON modifier.</p>
+		</description>
+		<sheet usage="1/Rest">
+			<description>As a reaction, when you take damage, you can reduce the amount you take by 1d10 + your CON modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Burrowing Harpy" type="Sub Race" source="Soravis Campaign" id="ID_SUB_RACE_BURROWING_HARPY">
+		<supports>Harpy</supports>
+		<description>
+			<p>Quick, agile, and quiet. Where other harpies became masters of the sky, Burrowing harpies became masters of the land. They’re taller than average, hitting around 6-7 feet in height. Their wings are shorter and weaker, their tails are longer and flashy; however, their most notable traits are their powerful legs and knife-like talons.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Proficiencies.</em></strong> You are proficient in the Acrobatics skill.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed increases to 40 feet, and gain immunity to falling damage. However, you must land at the end of each of your turns, and cannot sustain flight, regardless of the 'Base Harpy Stats' speed.</p>
+			<p class="indent"><strong><em>Deep Perceptiveness.</em></strong> While underground, you can tap into your inner senses. As a bonus action, you become blinded and deafened, but gain tremorsense up to 60 feet away. This lasts until you use a bonus action to end the effect or until you surface.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<stat name="innate speed" value="40" bonus="base" />
+			<stat name="innate speed:fly" value="35" bonus="base" equipped="![armor:heavy]" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DEXTEROUS_TALONS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_WEAK_WINGS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DEEP_PERCEPTIVENESS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+		</rules>
+	</element>
+	<element name="Weak Wings" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_WEAK_WINGS">
+		<description>
+			<p>You must land at the end of each of your turns, and cannot sustain flight, regardless of the 'Base Harpy Stats' speed.</p>
+		</description>
+		<sheet>
+			<description>You must land at the end of each of your turns, and cannot sustain flight, regardless of the 'Base Harpy Stats' speed.</description>
+		</sheet>
+	</element>
+	<element name="Deep Perceptiveness" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DEEP_PERCEPTIVENESS">
+		<description>
+			<p>While underground, you can tap into your inner senses. As a bonus action, you become blinded and deafened, but gain tremorsense up to 60 feet away. This lasts until you use a bonus action to end the effect or until you surface.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, you become blinded and deafened, but gain tremorsense up to 60 feet away. This lasts until you use a bonus action to end the effect or until you surface.</description>
+		</sheet>
+	</element>
 	
-    <element name="Harpy" type="Race" source="Soravis Campaign" id="ID_RACE_HARPY">
-        <description>
-            <p class="flavor">Once terrifying creatures that roamed the mountaintops, feasting on whatever poor adventurers walked through their domain, these harpies have evolved to fit into common societies. They can range anywhere from commonfolk going about their daily lives to soldiers guarding a city to land-dwelling watchers and rangers to quiet assassins with silent flight. Though almost all of them have abandoned their monstrous ways, they may still carry slight tendencies from their older days. </p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constution score increses by 2.</p>
-            <p class="indent"><strong><em>Age.</em></strong> Modern Harpies lifespans increased quite a bit from their ancestors to match the rate of other civilians. They age at the same rate as most civilians, hitting adulthood at 18, and live to about 200 to 300 years. </p>
-            <p class="indent"><strong><em>Alignment.</em></strong> Harpy alignments vary considerably depending on where or how they were raised; Generally speaking, modern harpies will tend towards true neutral, focusing on mainly their own self-betterment. </p>
-            <p class="indent"><strong><em>Size.</em></strong> On average, harpies typically reach 5-6 feet in height. They're a bit lighter than other races of this height, averaging 100 pounds. Your size is Medium.</p>
-            <p class="indent"><strong><em>Speed.</em></strong> You have a walking speed of 25 feet and a flying speed of 35 feet. You must land at the end of your turns; otherwise, you fall. Starting at 5th level, you no longer have to land at the end of each of your turns, as your feathers fully develop. </p>
-            <p class="indent"><strong><em>Cutting Claws.</em></strong> Your talons are sharp and dangerous. You are proficient with this attack; you can make a unarmed melee attack with your claws, dealing 1d6 + your DEX or your STR. </p>
-            <p class="indent"><strong><em>Dextrous Talons.</em></strong> Your clawed feet are highly agile and capable of being used to hold objects and make gestures while flying. Though they are good for carrying items while flying, it's admittedly difficult to use the items you carry while flying. You have disadvantage with any non-unarmed weapon attacks while flying.</p>
-            <p class="indent"><strong><em>Languages.</em></strong>  You can speak, read, and write Common. </p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORAIVS_HARPY_SUBRACE"/>
-            <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORAIVS_DEXTROUS_TALONS" />
-            <grant type="Racial Trait" id="ID_SAMPI_SENPAI_SORAIVS_CUTTING_CLAWS" />
-            <grant type="Language" id="ID_LANGUAGE_COMMON" />
-            <stat name="Innate speed" value="25" bonus="0" />
-            <stat name="innate speed:fly" value="35" bonus="base" equipped="![armor:heavy]" />
-        </rules>
-    </element>
-    
-    
+	<element name="Shadowkeep Harpy" type="Sub Race" source="Soravis Campaign" id="ID_SUB_RACE_SHADOWKEEP_HARPY">
+		<supports>Harpy</supports>
+		<description>
+			<p>Stealthy, fast, and silent, Shadowkeep harpies serve as master assassins, tracking down their prey and taking them out without a sound. They’re sharp and straight to the point. They typically sport dark, neutral colors on their feathers, and are the shortest types of harpies, hitting 4-5 feet on average. These harpies are not to be trifled with.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Proficiencies.</em></strong> You are proficient in the Stealth skill.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Silent Flight.</em></strong> Shadowkeep harpies have soft, delicate feathers built for silent flight. When you are flying, you emit no noise from your wings, and perception checks to hear you in this state are made with disadvantage.</p>
+			<p class="indent"><strong><em>Predator's Ambush.</em></strong> You are suited to strike with surprise. When you attack a creature that has not moved in initiative, you may deal an additional 2d6 damage to it. This ability only works once per combat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" />
+			<stat name="innate speed:fly" value="35" bonus="base" equipped="![armor:heavy]" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SILENT_FLIGHT" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PREDATORS_AMBUSH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	<element name="Silent Flight" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_SILENT_FLIGHT">
+		<description>
+			<p>Shadowkeep Harpies have soft, delicate feathers built for silent flight. When you are flying, you emit no noise from your wings, and perception checks to hear you in this state are made with disadvantage.</p>
+		</description>
+		<sheet>
+			<description>When you are flying, you emit no noise from your wings, and perception checks to hear you in this state are made with disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Predator's Ambush" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_PREDATORS_AMBUSH">
+		<description>
+			<p>You are suited to strike with surprise. When you attack a creature that has not moved in initiative, you may deal an additional 2d6 damage to it. This ability only works once per combat.</p>
+		</description>
+		<sheet usage="1/Encounter">
+			<description>When you attack a creature that has not moved in initiative, you may deal an additional 2d6 damage to it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Sea Harpy" type="Sub Race" source="Soravis Campaign" id="ID_SUB_RACE_SEA_HARPY">
+		<supports>Harpy</supports>
+		<description>
+			<p>Harpies that live next to bodies of water, sea harpies are widely varied in both appearance and personality. Some are beautiful and elegant, like the swan, and others are scrappy, scruffy, and brutish, like the duck. This variety hasn't proven the best for their reputation, as many percieve any sea harpy to be not unlike the rougher ones. Despite this, sea harpies gladly press on, using their quick wits and can-do personalities to proudly accept any challenge in their way.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+			<p class="indent"><strong><em>Proficiencies.</em></strong> You are proficient in the Survival skill.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Sea harpies' wings have an external layer of tough countour feathers, designed to give them equal maneuverability and protection in water as well as the air. You have a Swim speed of 30 feet.</p>
+			<p class="indent"><strong><em>Quick Wit.</em></strong> Having to live in environments with a wide amount of variety, sea harpies are good at adapting to any situation and outwitting their competition. As a reaction, you may add your Intelligence modifier to an ability check made by any creature within 30 feet, including yourself. Once you use this ability, you can't use it again until you've taken a short or long rest.</p>
+			<p class="indent"><strong><em>Deafening Song.</em></strong> Used to competition, sea harpies aren't afraid to assert themselves over others. As an action, you may let out a loud, imposing call, forcing creatures within 60 feet to make a Constitution saving throw, with a DC equal to 8 + your proficiency bonus + your Constitution modifier. On a failure, the creature is deafened for the next minute. This has no effect on creatures who cannot hear. Once you use this ability, you can't use it again until you've taken a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" />
+			<stat name="innate speed:fly" value="35" bonus="base" equipped="![armor:heavy]" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_QUICK_WIT" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DEAFENING_SONG" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+	<element name="Quick Wit" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_QUICK_WIT">
+		<description>
+			<p>Having to live in environments with a wide amount of variety, sea harpies are good at adapting to any situation and outwitting their competition. As a reaction, you may add your Intelligence modifier to an ability check made by any creature within 30 feet, including yourself. Once you use this ability, you can't use it again until you've taken a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>As a reaction, you may add your Intelligence modifier to an ability check made by any creature within 30 feet, including yourself. Once you use this ability, you can't use it again until you've taken a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Screeching Song" type="Racial Trait" source="Soravis Campaign" id="ID_RACIAL_TRAIT_DEAFENING_SONG">
+		<description>
+			<p>Used to competition, sea harpies aren't afraid to assert themselves over others. As an action, you can let out a loud, imposing call, forcing creatures within 60 feet to make a Constitution saving throw, with a DC equal to 8 + your proficiency bonus + your Constitution modifier. On a failure, the creature is deafened for the next minute. This has no effect on creatures who cannot hear. Once you use this ability, you can't use it again until you've taken a long rest.</p>
+		</description>
+		<sheet usage="1/Encounter">
+			<description>You let out a grating, ear-piercing screech, forcing creatures within 60 feet to make a Constitution saving throw, DC {{deafening-song:dc}}. On a failure, the creature is deafened for the next minute. This has no effect on creatures who cannot hear.</description>
+		</sheet>
+		<rules>
+		<stat name="deafening-song:dc" value="8"/>
+		<stat name="deafening-song:dc" value="constitution:modifier"/>
+		<stat name="deafening-song:dc" value="proficiency"/>
+		</rules>
+	</element>	
 </elements>
